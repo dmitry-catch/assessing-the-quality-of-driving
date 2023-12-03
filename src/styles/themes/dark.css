@@ -1,0 +1,4 @@
+body.dark-themeMode {
+  color: var(--color-text-dark);
+  background-color: var(--color-bg-dark);
+}

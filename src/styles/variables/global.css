@@ -1,0 +1,12 @@
+:root {
+  --color-text: #333;
+  --color-bg: #fff;
+
+  --color-text-dark: #fff;
+  --color-bg-dark: #333;
+
+  --color-border-primary: #a3a3a3;
+  --color-border-secondary: #ccc;
+
+  --gap-unit: 8px;
+}

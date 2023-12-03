@@ -1,0 +1,12 @@
+@import './reset.css';
+@import './variables/global.css';
+@import './themes/dark.css';
+@import './scroll.css';
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition:
+    color 1s,
+    background-color 1s;
+}
