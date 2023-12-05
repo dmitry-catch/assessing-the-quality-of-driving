@@ -20,9 +20,14 @@ watch(themeMode, () => {
 
 <template>
   <div class="Navbar">
-    <span @click="toggleTheme" class="Navbar__themeIcon">
+    <div class="Navbar__links">
+      <router-link to="/dashboard">Dashboard</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link to="/edit">Edit</router-link>
+    </div>
+    <!-- <span @click="toggleTheme" class="Navbar__themeIcon">
       <img src="icons/night-mode.svg" alt="night-mode" height="48" />
-    </span>
+    </span> -->
   </div>
 </template>
 
