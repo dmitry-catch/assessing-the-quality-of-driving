@@ -1,6 +1,7 @@
 <script setup>
 import { computed, watch } from 'vue'
 import { useThemeStore } from '@/store/theme.js'
+import ThemeToggler from '@/ui/ThemeToggler.vue'
 
 const themeStore = useThemeStore()
 const themeMode = computed(() => themeStore.themeMode)
@@ -20,19 +21,37 @@ watch(themeMode, () => {
 
 <template>
   <div class="Navbar">
-    <div class="Navbar__links">
-      <router-link to="/dashboard">Dashboard</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/edit">Edit</router-link>
+    <div class="Navbar__header">
+      <ThemeToggler @click="toggleTheme" class="Navbar__themeIcon" />
+      <span>Click icon to toggle theme</span>
     </div>
-    <!-- <span @click="toggleTheme" class="Navbar__themeIcon">
-      <img src="icons/night-mode.svg" alt="night-mode" height="48" />
-    </span> -->
+
+    <div class="Navbar__links">
+      <router-link to="/ui" class="Navbar__link"><span class="Navbar__item">UI</span></router-link>
+    </div>
   </div>
 </template>
 
 <style>
 .Navbar__themeIcon {
   cursor: pointer;
+}
+
+.Navbar__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Navbar__link {
+  text-decoration: none;
+}
+
+.Navbar__item {
+  font-weight: 700;
+}
+
+.Navbar__links {
+  padding: 36px 0;
 }
 </style>

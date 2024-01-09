@@ -13,6 +13,6 @@ import Navbar from '@/views/Navbar.vue'
 
 <style>
 .MainView {
-  padding: var(--gap-unit);
+  padding: 8px;
 }
 </style>
