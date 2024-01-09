@@ -31,6 +31,9 @@ watch(themeMode, () => {
       <router-link to="/auth" class="Navbar__link"
         ><span class="Navbar__item">Log in</span></router-link
       >
+      <router-link to="/charts" class="Navbar__link"
+        ><span class="Navbar__item">Charts</span></router-link
+      >
     </div>
   </div>
 </template>
