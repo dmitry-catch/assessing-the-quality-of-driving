@@ -3,10 +3,31 @@
 @import './themes/dark.css';
 @import './scroll.css';
 
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 body {
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body {
   transition:
-    color 1s,
-    background-color 1s;
+    color 0.7s,
+    background-color 0.7s;
+}
+
+input,
+input::placeholder {
+  transition: all 0.7s;
+}
+
+.Surface {
+  transition:
+    background-color 0.7s,
+    border-color 0.7s;
 }

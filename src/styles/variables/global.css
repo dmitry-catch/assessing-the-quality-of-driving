@@ -1,12 +1,34 @@
 :root {
-  --color-text: #333;
-  --color-bg: #fff;
+  --surface-background-color: #eaecef;
+  --surface-border-color: #d3d4d8;
 
-  --color-text-dark: #fff;
-  --color-bg-dark: #333;
+  --surface-background-color-dark: #858990;
+  --surface-border-color-dark: #787b82;
 
-  --color-border-primary: #a3a3a3;
-  --color-border-secondary: #ccc;
+  --input-background-color: #d6dae1;
+  --input-background-color-dark: #696f7b;
 
-  --gap-unit: 8px;
+  --text-color: #000;
+  --background-color: #fff;
+  --input-border-color: #6d727a;
+  --input-border-error-color-primary: #ff0000;
+  --input-border-error-color-secondary: #ff4c4c;
+
+  --text-color-dark: #fff;
+  --background-color-dark: #353941;
+  --input-border-color-dark: #5d626b;
+
+  --text-color-error-primary: #ff0000;
+  --text-color-error-secondary: #ff6a6a;
+
+  --text-color-error-tertiary: #db0000;
+  --text-color-error-tertiary-dark: #ff8888;
+
+  --button-background-color: #90b8f8;
+  --button-background-pressed-color: #5f85db;
+  --button-text-color: #fff;
+}
+
+.warning {
+  color: var(--text-color-error-primary);
 }

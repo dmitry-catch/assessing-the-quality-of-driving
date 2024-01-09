@@ -1,4 +1,35 @@
 body.dark-themeMode {
-  color: var(--color-text-dark);
-  background-color: var(--color-bg-dark);
+  color: var(--text-color-dark);
+  background-color: var(--background-color-dark);
+}
+
+body.dark-themeMode a {
+  color: #cc5dff;
+}
+
+body.dark-themeMode .Input__field {
+  background-color: var(--input-background-color-dark);
+  padding: 12px 20px;
+  border-radius: 28px;
+  border: 0.5px solid var(--input-border-color-dark);
+  font-weight: 500;
+  color: #fff;
+}
+
+body.dark-themeMode .Input__field::placeholder {
+  color: #ccc;
+}
+
+body.dark-themeMode .Input__field--invalid::placeholder {
+  color: var(--text-color-error-tertiary-dark);
+}
+
+body.dark-themeMode .warning {
+  color: var(--text-color-error-secondary);
+  border-color: var(--input-border-error-color-secondary);
+}
+
+body.dark-themeMode .Surface {
+  background-color: var(--surface-background-color-dark);
+  border-color: var(--surface-border-color-dark);
 }
