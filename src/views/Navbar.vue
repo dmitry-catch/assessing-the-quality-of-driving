@@ -28,6 +28,9 @@ watch(themeMode, () => {
 
     <div class="Navbar__links">
       <router-link to="/ui" class="Navbar__link"><span class="Navbar__item">UI</span></router-link>
+      <router-link to="/auth" class="Navbar__link"
+        ><span class="Navbar__item">Log in</span></router-link
+      >
     </div>
   </div>
 </template>
@@ -53,5 +56,7 @@ watch(themeMode, () => {
 
 .Navbar__links {
   padding: 36px 0;
+  display: flex;
+  gap: 16px;
 }
 </style>

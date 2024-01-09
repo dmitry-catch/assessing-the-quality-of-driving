@@ -9,10 +9,11 @@ const props = defineProps({
   placeholder: String,
   disabled: Boolean,
   invalid: Boolean,
-  error: String
+  error: String,
+  type: String
 })
 
-const { required, disabled, placeholder, invalid, error } = props
+const { required, disabled, placeholder, invalid, error, type } = props
 
 const internalValue = computed({
   get: () => props.modelValue,
@@ -30,12 +31,12 @@ const internalValue = computed({
         <span v-if="required" class="Input__labelRequiredStar warning">*</span>
       </div>
       <input
-        type="text"
         class="Input__field"
         v-model="internalValue"
         :placeholder="placeholder"
         :disabled="disabled"
         :class="invalid ? ['Input__field--invalid', 'warning'] : ''"
+        :type="type"
       />
     </div>
     <span v-if="invalid" class="Input__error warning">
@@ -50,6 +51,7 @@ const internalValue = computed({
 }
 
 .Input__field {
+  width: 100%;
   background-color: var(--input-background-color);
   padding: 12px 20px;
   border-radius: 28px;
